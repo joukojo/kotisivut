@@ -45,3 +45,33 @@ function closeFolder(folderid) {
     $('li#folder-icon-' + folderid).removeClass('folder-open');
     $('li#folder-icon-' + folderid).addClass('folder-closed');
 }
+
+function viewAdminFolders() {
+    $.getJSON('../ajax/listfolders.php', function($data) {
+        console.log($data);   
+        var folders = [];
+        $.each($data, function(key, val) {
+
+            var folderUrl = 'admin-folder.php?folderid=' + val.folder_id;
+            var folderName = val.folder_name;
+            var listItem = '<li><a href="' + folderUrl + '">'+folderName + '</a></li>';
+                
+            folders.push(listItem);
+        });
+            
+        $('<ul />', {
+            'class': 'folder-item',
+            html: folders.join('')
+        }).appendTo('#admin-folderlist');
+        
+    });
+}
+
+function initCreateAdminFolderForm() {
+    $('form#createFolder').submit(function() {
+        
+        console.log('submit create folder');
+        
+        return false;
+    });
+}
