@@ -31,16 +31,16 @@
             <fieldset>
                 <div class="formField">
                     <label>Kansion nimi</label>
-                    <input type="text" name="foldername" />
+                    <input type="text" name="name" />
 
                 </div>
                 <div class="formField">
                     <label>Kansion kuvaus</label>
-                    <input type="text" name="folderdescription" />
+                    <input type="text" name="desc" />
 
                 </div>
                 <div class="formField">
-                    <input type="submit" value="Luo uusi" />
+                    <input type="submit" value="Luo uusi" id="createfolder" />
                 </div>
 
 
