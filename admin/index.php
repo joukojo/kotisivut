@@ -47,7 +47,7 @@
             </fieldset>
 
         </form>
-
+        
     </div>
     <div id="tabs-4" class="ui-tabs-panel ui-widget-content ui-corner-bottom">
         <h1>Kuvat</h1>
