@@ -66,11 +66,30 @@ function viewAdminFolders() {
         
     });
 }
-
+var $response; 
 function initCreateAdminFolderForm() {
     $('form#createFolder').submit(function() {
         
         console.log('submit create folder');
+        $.post("../ajax/createfolder.php", $('#createFolder').serialize(),
+            function($data) {
+                
+                var $obj = jQuery.parseJSON($data);
+                $response = $obj; 
+                if( $obj.status == 'success') {
+                    console.log('rock rock');
+                    $('#createFolder').hide(500).delay(2500).show(500);
+                    $('#statusBox').html('Uusi kansio luotu onnistuneesti.');
+                    $('#statusBox').show(500).delay(2500).hide(500);
+                    $('#createFolder').each(function(){
+                        this.reset();
+                    });
+                    
+                    
+                }
+            }
+            );
+        
         
         return false;
     });
