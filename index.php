@@ -62,7 +62,7 @@ JHtml::_('behavior.framework', true);
 <h1 class="art-headline" data-left="97.65%">
     <a href="<?php echo $document->baseurl; ?>/"><?php echo $this->params->get('siteTitle'); ?></a>
 </h1>
-<h2 class="art-slogan" data-left="97.02%"><?php echo $this->params->get('siteSlogan'); ?></h2>
+<h2 class="art-slogan" data-left="95.44%"><?php echo $this->params->get('siteSlogan'); ?></h2>
 
 
             </div>
@@ -135,9 +135,6 @@ JHtml::_('behavior.framework', true);
 <footer class="art-footer clearfix"><?php echo $view->position('position-27', 'art-nostyle'); ?></footer>
 
     </div>
-    <p class="art-page-footer">
-        <span id="art-footnote-links"><a href="http://www.artisteer.com/?p=joomla_templates" target="_blank">Joomla template</a> created with Artisteer.</span>
-    </p>
 </div>
 
 

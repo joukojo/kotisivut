@@ -1,6 +1,6 @@
 body
 {
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAAWElEQVRoge3PgQnAIADAMOf/JyvbE4JhNBe0z97rHT8wbwec0oimEU0jmkY0jWga0TSiaUTTiKYRTSOaRjSNaBrRNKJpRNOIphFNI5pGNI1oGtE0omlE8wEp9gRZujpiYQAAAABJRU5ErkJggg==), #FDFDFC;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAAWElEQVRoge3PgQnAIADAMOf/JyvbE4JhNBe0z97rHT8wbwec0oimEU0jmkY0jWga0TSiaUTTiKYRTSOaRjSNaBrRNKJpRNOIphFNI5pGNI1oGtE0omlE8wEp9gRZujpiYQAAAABJRU5ErkJggg==), #F9FAFB url('../images/pageglare.png') no-repeat fixed;
   margin: 0 auto;
   font-size: 13px;
   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;

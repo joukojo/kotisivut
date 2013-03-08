@@ -2,10 +2,10 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
 <extension version="2.5" client="site" type="template" method="upgrade">
     <name>kotisivut</name>
-    <creationDate>2012-10-01</creationDate>
+    <creationDate>2013-03-08</creationDate>
     <version>1.0</version>
-    <author/>
-    <authorUrl/>
+    <author>Jouko Johansson</author>
+    <authorUrl>joukojo@gmail.com</authorUrl>
     <description>Artisteer-generated theme</description>
     <files>
         <folder>css</folder>

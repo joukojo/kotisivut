@@ -32,14 +32,14 @@ if (!defined('_ARTX_FUNCTIONS')) {
             $data = array('content' => $data);
         $classes = isset($data['classes']) && strlen($data['classes']) ? $data['classes'] : '';
                     artxFragmentBegin("<article class=\"art-post" . $classes . "\">");
-            artxFragmentBegin("<h2 class=\"art-postheader\"><span class=\"art-postheadericon\">");
+            artxFragmentBegin("<h2 class=\"art-postheader\">");
             if (isset($data['header-text']) && strlen($data['header-text'])) {
                 if (isset($data['header-link']) && strlen($data['header-link']))
                     artxFragmentContent('<a href="' . $data['header-link'] . '">' . $data['header-text'] . '</a>');
                 else
                     artxFragmentContent($data['header-text']);
             }
-            artxFragmentEnd("</span></h2>");
+            artxFragmentEnd("</h2>");
             artxFragmentBegin("<div class=\"art-postheadericons art-metadata-icons\">");
             if (isset($data['metadata-header-icons']) && count($data['metadata-header-icons']))
                 foreach ($data['metadata-header-icons'] as $icon)
